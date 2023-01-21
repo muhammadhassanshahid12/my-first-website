@@ -1,0 +1,251 @@
+
+
+:root {
+    --curve: 25;
+}
+
+.image-container {
+    display: flex;
+}
+
+
+
+
+.heading {
+    justify-content: center;
+    text-align: center;
+    font-size: 3ch;
+}
+
+.cards {
+    
+    border-radius: 2%;
+    display: inline-flex;
+    margin-left: 15%;
+}
+
+.card {
+    
+    border: 1px solid black;
+    background-color: rgb(255, 216, 243);
+    text-align: center;
+    margin-left: 5%;
+    height: 40vh;
+    width: 50%;
+    border-radius: calc(var(--curve) * 3px);
+    transition: .2s ease-in-out;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    list-style-type: none;
+}
+
+img {
+    object-fit: cover;
+    background: fixed;
+    height: 30ch;
+    width: 100%;
+    justify-content: center;
+    border-radius: 2%;
+
+}
+
+.email {
+    background-image: url("rachel-park-hrlvr2ZlUNk-unsplash.jpg");
+    background-position: top;
+    background-size: cover;
+    margin-top: 10%;
+    padding: 5rem calc((100vw - 1300px)/2);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.email__content h1 ,h3{
+    text-align: center;
+    font-size: clamp(3rem, 2.5vw, 1.5rem);
+color: #000;
+}
+
+.email__content p{
+    color: #fff;
+    text-align: center;
+    font-size: clamp(2rem, 2.5vw, 1.5rem);
+
+}
+
+.form__wrap input {
+    padding: 1rem 1.5rem;
+    outline: none;
+    width: 200px;
+    height: 2vh;
+    border: none;
+    margin-right: 1rem;
+    border-radius: 4px;
+
+}
+
+button {
+    background: rgb(253, 48, 48);
+    border: 1px solid black;
+    height: 5vh;
+    width: 80px;
+    border-radius: 0.2rem;
+}
+/*banner*/
+.text-block {
+    font-style: italic;
+    transition: 2s ease-in-out;
+    transition: width 2s;
+    position: absolute;
+    top: 50%;
+    left: 20px; 
+    color: white;
+    font-size:4rem;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .text-block2{
+    transition: 2s ease-in-out;
+    position: absolute;
+    top: 65%;
+    left: 50px; 
+    color: white;
+    font-size:2rem;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /******/
+
+  /* font-family: 'Big Shoulders Text', cursive; */
+  
+  
+  .about-section {
+      display: flex;
+      align-items: center;
+      background-color: #f3f3f3c0;
+      padding: 50px 30px;
+  }
+  
+  
+  .about-section p,
+  .about-section h3 {
+    color: #000;
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      font-family: 'Big Shoulders Text', cursive;
+      font-size: 1.8em;
+      text-transform: uppercase;
+  }
+  
+  .carousel-inner {
+      height: 700px;
+  }
+  
+  .row-flex {
+    background-color: #f3f3f3c0;
+      display: flex;
+      margin-top: 10%;
+      flex-direction: row;
+  }
+  
+  .flex-column-form ,h1 {
+    font-weight: bold;
+    font-size: x-large;
+     color: #000;
+      display: flex;
+      flex-direction: column;
+      flex: 3;
+      margin: 3px 20px;
+  }
+ 
+  .opening-time,
+  .contact-adress {
+    text-align: center;
+      flex: 1;
+
+      font-size: 1.2em;
+      color: #000;
+  }
+  
+
+  
+  .opening-time p span,
+  .contact-adress p span {
+      display: block;
+  }
+  
+  @media (min-width:577px) and (max-width: 800px) {
+  
+      .section-intro {
+          height: 500px;
+      }
+  
+      .about-section p,
+      .about-section h3 {
+          font-size: 20px;
+      }
+  
+      .carousel-inner {
+          height: auto;
+      }
+  
+      .row-flex {
+          display: flex;
+          flex-direction: column;
+      }
+  }
+  
+  @media screen and (max-width: 576px) {
+      .section-intro {
+          height: 300px;
+      }
+  
+      .about-section {
+          padding: 30px;
+      }
+  
+      .section-intro h1 {
+          font-size: 2em;
+      }
+  
+      .about-section p,
+      .about-section h3 {
+          font-size: 15px;
+      }
+  
+      .carousel-inner {
+          height: auto;
+      }
+  
+      .row-flex {
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .row-flex h3 {
+          font-size: 25px;
+          text-align: center;
+      }
+  
+      .form-group p {
+          font-size: 15px;
+      }
+  
+      .opening-time p span,
+      .contact-adress p span {
+          font-size: 15px;
+          text-align: center;
+      }
+  
+  }
+  /*****/

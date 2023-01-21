@@ -1,0 +1,164 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.text-block {
+    transition: 2s ease-in-out;
+    transition: width 2s;
+    position: absolute;
+    top: 50%;
+    left: 20px; 
+    color: white;
+    font-size:3rem;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .text-block2{
+    transition: 2s ease-in-out;
+    position: absolute;
+    top: 60%;
+    left: 50px; 
+    color: white;
+    font-size:2rem;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+@media only screen and (max-width: 1366px) {
+  
+  body  {
+    margin: 0;
+    padding: 0;
+}
+}
+
+.row {
+    display: flex;
+    margin: 0 16px;
+  }
+  
+  .box3 {
+    -ms-flex: 25%; 
+    flex: 25%;
+  }
+  
+  .box2 {
+    -ms-flex: 50%; 
+    flex: 50%;
+  }
+  
+  .box1 {
+    -ms-flex: 75%; 
+    flex: 75%;
+  }
+  
+  .box3,
+  .box2,
+  .box1 {
+    padding: 0 16px;
+  }
+  
+  .container {
+      margin: 2%;
+      background-color: #7c7979;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    font-family: cursive;
+   
+  }
+  
+  input[type=text] {
+    width: 75%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 7px solid #95a7ab ;
+    border-radius: 5px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size:100px;
+  }
+  
+  .btn {
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #000000;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  .delivery {
+    color: black;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  
+  /*-------------------------footer--------------------------------------------*/
+
+
+.mainicon {
+    display: inline-flex;
+    margin-left: 38%;
+  }
+  .hr3{
+    width: 80%;
+  }
+  .icons {
+    margin: 2%;
+    margin-left: 4%;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    cursor: pointer;
+  }
+  #icon1:hover {
+  
+    color: rgb(73, 84, 145);
+  }
+  #icon2:hover {
+  
+    color: #d6249f;
+  }
+  #icon3:hover {
+  
+    color: rgb(211, 14, 14);
+  }
+  #icon4:hover {
+  
+    color: lightgreen;
+  }
+  
+  .text{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 2%;
+    font-size: 3ch;
+  }
+  /*-------------------------footer--------------------------------------------*/
+    

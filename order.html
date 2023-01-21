@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="order.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+        <!-----------------------------nav bar-------------------------------------------->
+
+
+        <div class="nav">
+            <ul>
+                <img src="logo.png" alt="Image" style="height: 8vh; width: 55px; margin-left: 25px; border: radius 0.5em;;">
+                            <li><a href="contact.html">Contact</a></li>
+                <li><a  href="menu.html">Menu</a></li>
+                <li><a class="active">Order</a></li>
+                <li><a href="about.html">Aboutus</a></li>
+                <li><a  href="index.html">Home</a></li>
+    
+            </ul>
+        </div>
+           <!-----------------------------banner-------------------------------------------->
+           <div class="carousel">
+            <div class="image-container" id="imgs">
+                <img src="order.jpg" alt="Image" style="height: 100vh; width: 100%;">
+               <h1 class="text-block">--Order --</h1>
+               <P class="text-block2"> We’re Swirls ! We bake, we cook, and we love to serve you!</p></P>
+            </div>
+    
+    
+        </div><br></br>
+        <!-----------------------------------from----------------------------------------->
+        <form>
+            <div class="row">
+              <div class="box1">
+                <div class="container">
+                  <form action="/action_page.php">
+            
+                    <div class="row">
+                      <div class="box2">
+                        <h3  style="color: rgb(12, 12, 10);"  >Billing Address</h3>
+                        <label style="color: white;" for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                        <label  style="color: white;"  for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="@example.com">
+                        <label  style="color: white;"  for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="Block 24 15th Street">
+                        <label  style="color: white;"  for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="Karachi">
+            
+            
+                      </div>
+            
+                      <div class="box2">
+                        <h3  style="color: rgb(25, 26, 16);"  >Payment</h3>
+                        <label  style="color: white;"  for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="Registered Name">
+                        <label  style="color: white;"  for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        <label  style="color: white;"  for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="May">
+            
+                        <div class="row">
+                          <div class="box2">
+                            <label  style="color: white;"  for="expyear">Exp Year</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2022">
+                          </div>
+                          <div class="box2">
+                            <label  style="color: white;"  for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="100">
+                          </div>
+                        </div>
+                      </div>
+            
+                    </div>
+                    
+                             <div>
+                        <fieldset class="delivery">
+                          <legend  style="color: rgb(12, 14, 7);" >Delivery</legend>
+                          <label  style="color: white;"  for="del">Preferred delivery time: </label>
+                          <input type=time min="11:00" max="21:00" step="900" name="del" id="del" required /><br />
+                          <br><label  style="color: white;"  for="instr">Delivery instructions: </label><br />
+                          <textarea rows="3" cols="60" name="instr" id="instr" maxlength=1000></textarea>
+                        </fieldset>
+                      </div>
+                    <label>
+                      <input  style="color: rgb(11, 12, 7);" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                    <input type="submit" value="Continue to checkout" class="btn">
+                  <div class="box3">
+                <div class="container">
+                  <h4  style="color: rgb(17, 19, 9);" >Cart
+                    <span class="price" style="color:rgb(0, 0, 0) ; font-size: 3ch;" >
+                      <i class="fa fa-shopping-cart"></i>
+                      <b>0</b>
+                    </span>
+                  </h4>
+                  <hr>
+                  <p>Total <span class="price" style="color:rgb(11, 14, 2)"><b>-</b></span></p>
+                </div>
+              </div>
+                </div>
+              </div>
+            </div>
+            </form>
+       <!------------------------------------------>
+        
+       <footer>
+       
+     
+         
+        <div class=" mainicon">
+            <div class="icons">
+                <i class="fa fa-facebook-official" id="icon1" style="  font-size: 36px;"></i> </div>
+            <div class="icons">
+                <i class="fa fa-instagram" id="icon2" style="  font-size: 36px;"></i> </div>
+            <div class="icons">
+                <i class="fa fa-youtube" id="icon3" style="  font-size: 36px;"></i> </div>
+            <div class="icons">
+                <i class="fa fa-whatsapp" id="icon4" style="  font-size: 36px;"></i> </div>
+        </div>
+        <hr class="hr3">
+        <div class="text">
+            <p> Copyright © 2020 Swirls</p>
+      
+        </div>
+      
+      </footer>
+      </footer>
+</body>
